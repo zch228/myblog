@@ -46,6 +46,9 @@ class ProducerThread implements Runnable {
     }
 }
 
+/**
+ * 消费者
+ */
 class ConsumerThread implements Runnable {
     public BlockingQueue<String> blockingQueue;
     private volatile boolean flag = true;
@@ -61,16 +64,16 @@ class ConsumerThread implements Runnable {
         try {
             while (flag) {
                 String data = blockingQueue.poll(3, TimeUnit.SECONDS);
-                if (data==null) {
+                if (data == null) {
                     System.out.println("超过了三秒时间，没有获取到信息");
                     flag = false;
                     return;
                 }
-                System.out.println("消费者获取到了消息，data:"+data);
+                System.out.println("消费者获取到了消息，data:" + data);
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             System.out.println("消费者已经停止");
         }
     }
