@@ -1,4 +1,4 @@
-package study.myblog.hystrix_test.src.main.java.com.hystrix.hystrix;
+package com.alibaba.hystrix;
 
 import com.netflix.hystrix.HystrixThreadPoolKey;
 import com.netflix.hystrix.strategy.properties.HystrixProperty;

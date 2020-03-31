@@ -1,10 +1,10 @@
-package study.myblog.hystrix_test.src.main.java.com.hystrix.hystrix;
+package com.alibaba.hystrix;
 
-package myHystrix.threadpool;
 
 import com.netflix.hystrix.*;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Future;
 
@@ -13,7 +13,6 @@ import java.util.concurrent.Future;
  */
 public class GetOrderCommand extends HystrixCommand<List> {
 
-    OrderService orderService;
 
     public GetOrderCommand(String name){
         super(Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey("ThreadPoolTestGroup"))
@@ -33,7 +32,7 @@ public class GetOrderCommand extends HystrixCommand<List> {
 
     @Override
     protected List run() throws Exception {
-        return orderService.getOrderList();
+        return new ArrayList();
     }
 
     public static class UnitTest {
