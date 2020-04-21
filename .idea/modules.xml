@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/hystrix_test/hystrix_test.iml" filepath="$PROJECT_DIR$/hystrix_test/hystrix_test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/xiancheng_test/xiancheng_test.iml" filepath="$PROJECT_DIR$/xiancheng_test/xiancheng_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/myblog.iml" filepath="$PROJECT_DIR$/.idea/myblog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webmagic/webmagic.iml" filepath="$PROJECT_DIR$/webmagic/webmagic.iml" />
     </modules>
   </component>
 </project>
