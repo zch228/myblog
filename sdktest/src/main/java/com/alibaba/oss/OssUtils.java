@@ -20,7 +20,7 @@ public class OssUtils {
     public static void main(String[] args) {
         List<String> names = Arrays.asList("lingshi/01第一节(纯手写SpringMVC框架-项目演示).mp4");
 
-        String s = downloadOSS("oss-cn-beijing.aliyuncs.com", "LTAI4FnemTkDu2bkE9kGko8r", "FLSysKMzlken06mvLYUxhwi0xPS7iW", "testlivetest1", names, "d://");
+        String s = downloadOSS("oss-cn-beijing.aliyuncs.com", "accessKeyId", "accessKeySecret", "testlivetest1", names, "d://");
         System.out.println(s);
     }
 
