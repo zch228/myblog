@@ -49,13 +49,13 @@ public class AliyunLiveController {
          */
         AliyunLiveConfig aliyunLiveConfig = new AliyunLiveConfig();
         Integer courseId = 111;
-        aliyunLiveConfig.setAliyunLiveAppName("test");
+        aliyunLiveConfig.setAliyunLiveAppName("");
         aliyunLiveConfig.setAliyunLiveIdentUrlValidTime(3600);
-        aliyunLiveConfig.setAliyunLivePullDomain("broadcast2.cunwedu.com.cn");
-        aliyunLiveConfig.setAliyunLivePullIdentKey("HxVMWpv5Ny");
-        aliyunLiveConfig.setAliyunLivePushDomain("live2.cunwedu.com.cn");
-        aliyunLiveConfig.setAliyunLivePushIdentKey("xUx68dWNi4");
-        aliyunLiveConfig.setAliyunLiveStreamName("test111");
+        aliyunLiveConfig.setAliyunLivePullDomain("");
+        aliyunLiveConfig.setAliyunLivePullIdentKey("");
+        aliyunLiveConfig.setAliyunLivePushDomain("");
+        aliyunLiveConfig.setAliyunLivePushIdentKey("");
+        aliyunLiveConfig.setAliyunLiveStreamName("");
 
         String pushUrl = AliyunLiveUtil.createPushUrl(courseId, LiveTypeEnum.course, aliyunLiveConfig);
         System.out.println(pushUrl);
