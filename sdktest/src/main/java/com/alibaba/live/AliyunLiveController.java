@@ -33,13 +33,13 @@ public class AliyunLiveController {
 
     public static void main(String[] args) {
         /**
-         * aliyun.live.push.domain=live.cunwedu.com.cn
+         * aliyun.live.push.domain=
          #推流鉴权url key
-         aliyun.live.push.ident.key=CUNW20200211live
+         aliyun.live.push.ident.key=
          #拉流域名
-         aliyun.live.pull.domain=broadcast.cunwedu.com.cn
+         aliyun.live.pull.domain=
          #拉流鉴权url key
-         aliyun.live.pull.ident.key=CUNW20200211play
+         aliyun.live.pull.ident.key=
          #直播测试appName
          aliyun.live.appName=test
          #直播测试streamName{直播类型}{类型id}
